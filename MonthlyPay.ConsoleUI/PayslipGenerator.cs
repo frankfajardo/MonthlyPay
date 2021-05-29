@@ -1,8 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.IO;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 
 using Microsoft.Extensions.Logging;
@@ -34,14 +31,14 @@ namespace MonthlyPay.ConsoleUI
                 outputWriter.WriteLine($"\n======================================================");
                 outputWriter.WriteLine($"    Monthly Payslip for:  {Formatter.FormatName(employeeName)}");
                 outputWriter.WriteLine($"------------------------------------------------------");
-                outputWriter.WriteLine($"    Gross Monthly Income: {Formatter.FormatDollarAmount(monthlyPayDetails.monthlyGrossIncome)}");
-                outputWriter.WriteLine($"    Monthly Income Tax:   {Formatter.FormatDollarAmount(monthlyPayDetails.monthlyIncomeTax)}");
-                outputWriter.WriteLine($"    Net Monthly Income:   {Formatter.FormatDollarAmount(monthlyPayDetails.monthlyNetIncome)}");
+                outputWriter.WriteLine($"    Gross Monthly Income: {Formatter.FormatDollarAmount(monthlyPayDetails.MonthlyGrossIncome)}");
+                outputWriter.WriteLine($"    Monthly Income Tax:   {Formatter.FormatDollarAmount(monthlyPayDetails.MonthlyIncomeTax)}");
+                outputWriter.WriteLine($"    Net Monthly Income:   {Formatter.FormatDollarAmount(monthlyPayDetails.MonthlyNetIncome)}");
                 outputWriter.WriteLine($"======================================================\n");
             }
             catch (Exception e)
             {
-                logger.LogError("App received " + e.ToString() + ": " + e.Message + " Call stack: " + e.StackTrace);
+                logger.LogError("Payslip Generator received " + e.ToString() + ": " + e.Message + " Call stack: " + e.StackTrace);
                 outputWriter.WriteLine("Error encountred whilst generating monthly payslip.");
                 return;
             }

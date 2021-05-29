@@ -19,6 +19,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MonthlyPay.BusinessLogic", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MonthlyPay.BusinessLogic.Tests", "MonthlyPay.BusinessLogic.Tests\MonthlyPay.BusinessLogic.Tests.csproj", "{D52F592E-4887-4727-B65B-40D5E7352AF8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonthlyPay.ConsoleUI.Tests", "MonthlyPay.ConsoleUI.Tests\MonthlyPay.ConsoleUI.Tests.csproj", "{5ACEBC1B-5DFE-4D99-8988-4CE4F4EB9FAF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{D52F592E-4887-4727-B65B-40D5E7352AF8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D52F592E-4887-4727-B65B-40D5E7352AF8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D52F592E-4887-4727-B65B-40D5E7352AF8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5ACEBC1B-5DFE-4D99-8988-4CE4F4EB9FAF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5ACEBC1B-5DFE-4D99-8988-4CE4F4EB9FAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5ACEBC1B-5DFE-4D99-8988-4CE4F4EB9FAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5ACEBC1B-5DFE-4D99-8988-4CE4F4EB9FAF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

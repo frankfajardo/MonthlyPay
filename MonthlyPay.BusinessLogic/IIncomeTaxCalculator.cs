@@ -4,6 +4,6 @@ namespace MonthlyPay.BusinessLogic
 {
     public interface IIncomeTaxCalculator
     {
-        Task<(decimal monthlyGrossIncome, decimal monthlyIncomeTax, decimal monthlyNetIncome)> GetMonthlyPayDetailsAsync(decimal annualIncome);
+        Task<(decimal MonthlyGrossIncome, decimal MonthlyIncomeTax, decimal MonthlyNetIncome)> GetMonthlyPayDetailsAsync(decimal annualIncome);
     }
 }

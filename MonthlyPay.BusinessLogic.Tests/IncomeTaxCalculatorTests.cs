@@ -80,9 +80,9 @@ namespace MonthlyPay.BusinessLogic.Tests
             var result = sut.GetMonthlyPayDetailsAsync(sample.AnnualIncome).GetAwaiter().GetResult();
 
             // Assert
-            result.monthlyGrossIncome.Should().Be(sample.ExpectedMonthlyGross);
-            result.monthlyIncomeTax.Should().Be(sample.ExpectedMonthlyTax);
-            result.monthlyNetIncome.Should().Be(sample.ExpectedMonthlyNet);
+            result.MonthlyGrossIncome.Should().Be(sample.ExpectedMonthlyGross);
+            result.MonthlyIncomeTax.Should().Be(sample.ExpectedMonthlyTax);
+            result.MonthlyNetIncome.Should().Be(sample.ExpectedMonthlyNet);
         }
 
     }

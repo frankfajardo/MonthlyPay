@@ -19,13 +19,13 @@ namespace MonthlyPay.BusinessLogic
             this.taxTierRepository = taxTierRepository ?? throw new ArgumentNullException(nameof(taxTierRepository));
         }
 
-        public async Task<(decimal monthlyGrossIncome, decimal monthlyIncomeTax, decimal monthlyNetIncome)> GetMonthlyPayDetailsAsync(decimal annualIncome)
+        public async Task<(decimal MonthlyGrossIncome, decimal MonthlyIncomeTax, decimal MonthlyNetIncome)> GetMonthlyPayDetailsAsync(decimal annualIncome)
         {
             var annualTax = await GetAnnualIncomeTax(annualIncome);
             var monthlyGrossIncome = decimal.Round(annualIncome / MONTHS_IN_A_YEAR, 2);
             var monthlyIncomeTax = decimal.Round(annualTax / MONTHS_IN_A_YEAR, 2);
             var monthlyNetIncome = monthlyGrossIncome - monthlyIncomeTax;
-            return (monthlyGrossIncome, monthlyIncomeTax, monthlyNetIncome);
+            return (MonthlyGrossIncome: monthlyGrossIncome, MonthlyIncomeTax: monthlyIncomeTax, MonthlyNetIncome: monthlyNetIncome);
         }
 
         private async Task<decimal> GetAnnualIncomeTax(decimal annualIncome)
