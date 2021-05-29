@@ -33,7 +33,7 @@ Using the dotnet CLI:
 - From the root directory of the repo, do `cd MonthlyPay.ConsoleUI`.
 - Then run with the arguments `Mary Song` as employee name and `60000` as annual income, run command: 
 ```
-dotnet run -- "Mary Song" 60000`
+dotnet run -- "Mary Song" 60000
 ```
 ## Screenshot
 
