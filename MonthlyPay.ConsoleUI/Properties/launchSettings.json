@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "MonthlyPay.ConsoleUI": {
+      "commandName": "Project",
+      "commandLineArgs": "\"Mary Song\" 60000 pause"
+    }
+  }
+}
